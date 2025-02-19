@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Завантажте файл і виберіть тип конвератції</h1>
+    
+    <form action="submit" method="post"  enctype="multipart/form-data">
+
+        <div>
+            <label for="file">Виберіть файл для завантаження</label>
+            <input type="file" name ='file' id = 'file' required>
+        </div>
+        <div>
+            <label for = 'conversion'>Оберіть тип конвератції</label>
+            <select id = 'conversion' name = 'conversion' required>
+                <option value="png_to_jpg">PNG to JPG</option>
+                <option value="jpg_to_png">JPG to PNG</option>
+                <option value="excel_to_csv">XLSCX to CSV</option>
+                <option value="csv_to_excel">CSV to EXCEL</option>
+                <option value="txt_to_PDF">TXT to PDF</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Завантажити та ковенртувати</button>
+        </div>
+    </form>
+    
+</body>
+</html>
